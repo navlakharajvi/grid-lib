@@ -3,4 +3,4 @@
  */
 
 // export * from './lib/grid-lib';
-export * from './lib/components/grid/grid';
+export * from './lib/grid/grid';
