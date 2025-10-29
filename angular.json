@@ -1,0 +1,33 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "grid-lib": {
+      "projectType": "library",
+      "root": "projects/grid-lib",
+      "sourceRoot": "projects/grid-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/grid-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/grid-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/grid-lib/tsconfig.spec.json"
+          }
+        }
+      }
+    }
+  }
+}
