@@ -1,6 +1,9 @@
 {
   "name": "grid-lib",
   "version": "0.0.1",
+  "scripts": {
+    "build": "ng build grid-lib --configuration production"
+  },
   "peerDependencies": {
     "@angular/common": "^20.3.0",
     "@angular/core": "^20.3.0"
