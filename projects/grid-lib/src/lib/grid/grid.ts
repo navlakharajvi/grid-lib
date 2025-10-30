@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-grid',
@@ -9,10 +9,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./grid.css'],
 })
 export class Grid implements OnInit {
-  constructor() {}
-  
+  @Input() name: string = '';
+  @Input() message: string = '';
+  constructor() { }
+
   ngOnInit(): void {
     console.log("My Comp works!");
-    
+
   }
 }
