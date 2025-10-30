@@ -21,6 +21,15 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.7", ngImpor
                 type: Input
             }] } });
 
+class Grid2 {
+    static ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "20.3.7", ngImport: i0, type: Grid2, deps: [], target: i0.ɵɵFactoryTarget.Component });
+    static ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "20.3.7", type: Grid2, isStandalone: true, selector: "lib-grid-2", ngImport: i0, template: "<p>grid-2 works!</p>\n", styles: [""] });
+}
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.7", ngImport: i0, type: Grid2, decorators: [{
+            type: Component,
+            args: [{ selector: 'lib-grid-2', imports: [], template: "<p>grid-2 works!</p>\n" }]
+        }] });
+
 /*
  * Public API Surface of grid-lib
  */
@@ -30,5 +39,5 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.7", ngImpor
  * Generated bundle index. Do not edit.
  */
 
-export { Grid };
+export { Grid, Grid2 };
 //# sourceMappingURL=grid-lib.mjs.map
