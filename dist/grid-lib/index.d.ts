@@ -10,7 +10,8 @@ declare class Grid implements OnInit {
     static ɵcmp: i0.ɵɵComponentDeclaration<Grid, "lib-grid", never, { "name": { "alias": "name"; "required": false; }; "message": { "alias": "message"; "required": false; }; }, {}, never, never, true, never>;
 }
 
-declare class Grid2 {
+declare class Grid2 implements OnInit {
+    ngOnInit(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<Grid2, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<Grid2, "lib-grid-2", never, {}, {}, never, never, true, never>;
 }

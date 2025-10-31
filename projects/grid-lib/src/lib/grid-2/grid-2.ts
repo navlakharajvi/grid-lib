@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import moment from 'moment';
 
 @Component({
   selector: 'lib-grid-2',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './grid-2.html',
   styleUrl: './grid-2.css',
 })
-export class Grid2 {
-
+export class Grid2 implements OnInit {
+  ngOnInit(): void {
+    console.log("Today", moment().utc().format());
+  }
 }
